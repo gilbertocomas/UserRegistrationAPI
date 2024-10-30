@@ -139,3 +139,20 @@ disponibilidad de tiempo. Pero estos muy bien pudieron ser a través de
 configuración de la `Base de Datos` o realizar un
 `Endpoint de actualización expresiones regulares` que me permitiera
 actualizarlas sin la necesidad de recurrir a los recursos técnicos.
+
+# Notas Adicionales
+
+## Uso de ModelState
+
+Hicimos uso del `ModelState` para ir agregando los diferentes mensajes de
+errores según las validaciones y de esa manera, poder hacer una devolución de un
+`List` de esos mensajes de manera simultaneo (evitando un `BadRequest` en cada
+validación), evitando así que el usuario vaya superando validaciones y que sigan
+apareciendo validaciones posteriores (evitando superar validación tras
+validación).
+
+## Creación Modelo APIResponse
+
+Decidimos crear un modelo `APIResponse` con el objetivo de estandarizar la
+respuesta del Endpoint desarrollado, así como de futuros posibles Endpoints, de
+esta manera el usuario siempre tendrá una respuesta Homogenea.
