@@ -39,7 +39,7 @@ JSON:
 Clona el proyecto en tu máquina local:
 
 ```bash
-git clone https://github.com/tu-usuario/UserRegistrationAPI.git
+git clone https://github.com/gilbertocomas/UserRegistrationAPI.git
 cd UserRegistrationAPI
 ```
 
@@ -92,11 +92,12 @@ desde el CLI:
 dotnet run
 ```
 
-La API estará disponible en `https://localhost:7170`.
+La API estará disponible en su explorar principal e iniciará usando Swagger `https://localhost:7170/swagger/index.html`. También en la url `https://localhost:7170`.
 
 # Endpoints Disponibles
 
-1. **Registro de Usuario** POST /api/UserRegistrationAPI Crea un nuevo usuario
+1. **Registro de Usuario** 
+   Tendrá disponible un Endpoint **`POST` `/api/UserRegistrationAPI`**. Crea un nuevo usuario
    en la base de datos. Los datos del usuario deben enviarse en el cuerpo de la
    solicitud en formato JSON.
 
